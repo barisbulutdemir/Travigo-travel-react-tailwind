@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+
+    }
+    .travigo-container {
+        @apply w-[85vm] xl:w-[95vm] m-auto;
+    }
+
+    /* buttons*/
+    .button-emarald{
+        @apply bg-gradient-to-b from-emerald-500
+        to-green-500 shadow-lg shadow-emerald-400 rounded-full text-lg sm:text-sm px-9 py-1.5
+        transition-all duration-200 active:scale-90 text-white sm:w-48;
+    }
+    .button-light{
+        @apply bg-gradient-to-b from-white
+        to-slate-100 shadow-lg shadow-slate-400 rounded-full text-lg sm:text-sm px-9 py-1.5
+        transition-all duration-200 active:scale-90 text-black sm:w-48;
+    }
+
+
+
+    .drop-shadow-emrald {
+         filter: drop-shadow(0.1rem 0.1rem 0.1rem rgba(74 222 128 / 80%));
+    }
+
+    .showpopup{
+        opacity: 1;
+        visibility: visible;
+        transform: skewY(0deg) translateY(10px);
+    }
+    .noshowpopup{
+
+        opacity: 0;
+        visibility: hidden;
+        transform: skewY(3deg) translateY(-30px);
+    }
+
+    .scroll-hidden::-webkit-scrollbar{
+        display: none !important;
+    }
+
+
+}
